@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Bonito</title>
+    <style>
+        body {
+            background-color: #f3e5f5;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #7b1fa2;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #5e35b1;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #7b1fa2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #6a1b9a;
+        }
+
+        .heart {
+            color: #e91e63;
+            font-size: 3em;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>¡Eres increíble!</h1>
+        <p>Tu presencia ilumina todo el día.</p>
+        <button onclick="alert('¡Tú también eres especial! 😊')">Dime algo bonito</button>
+    </div>
+</body>
+</html>
